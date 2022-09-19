@@ -1,0 +1,55 @@
+<html>
+<script>
+function clickColor(hex, seltop, selleft, html5) {
+    var c, cObj, colormap, areas, i, areacolor, cc;
+    if (html5 && html5 == 5)  {
+        c = document.getElementById("html5colorpicker").value;
+        
+    } 
+    
+}
+
+</script>
+<style>
+div {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    }
+table, th, td {
+  border:1px solid black;
+  border-collapse: collapse;
+}
+td {
+	width: 40px;
+	}
+tr {
+    height: 40px;
+	}
+</style>
+<body>
+
+<div>
+
+<table>
+    	<tr>
+            <td id="t00" style="background-color: rgb(255, 0, 0);">.</td>
+            <td id="t01" style="background-color: rgb(255, 0, 0);">.</td>
+            <td id="t02" style="background-color: rgb(255, 0, 0);">.</td>
+            <td id="t03" style="background-color: rgb(255, 0, 0);">.</td>
+            <td id="t04" style="background-color: rgb(255, 0, 0);">.</td>
+        </tr>
+    	<tr><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td></tr>
+        <tr><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td></tr>
+        <tr><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td></tr>
+        <tr><td>.</td><td>.</td><td>.</td><td>.</td><td>.</td></tr>
+    </table>
+</div> 
+
+<div id="html5DIV">
+    <h3>Or Use HTML5:</h3>
+    <input type="color" id="html5colorpicker" onchange="clickColor(0, -1, -1, 5)" value="#ff0000" style="width:85%;">
+  </div>
+
+</body>
+</html>
